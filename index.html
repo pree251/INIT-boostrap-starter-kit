@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <head>
+    <!--This your page's title. This is what will be shown in Google and on the tab at the top of your screen.-->
     <title>! Put your website's name here</title>
-    <a href="https://www.w3schools.com">This is a link</a>
+
+    <!--CSS is how you'll be able to style your website. We have included Boostrap's CSS files as well as one you can edit and make your own!-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet"/> <!--You can edit this file to style your webpage however you want using CSS!-->
+
+    <!--And, here we've got some metadata! Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.-->
     <meta charset="UTF-8">
     <meta name="keywords" content="! Put your keywords here">
     <meta name="description" content="! Type a description of your webpage">
     <meta name="author" content="! Put your name here">
-    <meta name="viewport" content="! width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="! width=device-width, initial-scale=1.0"> 
 </head>
 
+<!--Anything that you include within your body tags is visible on the website you design!-->
 <body>
-<h1> This is an example website!</h1>
+   
+    <!--This is your navbar. It shows links on the top of your page.-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class = "container-fluid">
+            <a class="navbar-brand" href="/">! Put your website's name here</a>
 
+            <!--It automatically minimizes your navbar on mobile and this button lets you open it.-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">! Link 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">! Link 2</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <!--This is a container. Containers are used to contain, pad, and (sometimes) center the content within them.-->
+    <div class="container">
+        <h1>!Put your heading here.</h1>
+
+        <div class="row">
+            <!--Here we have set a 2-column layout for the page. The total number of columns in a bootstrap are 12 so here we have split it in the ratio 8:4.-->
+            <div class="col-12 col-lg-8">
+
+                <!--We are going to be including a Carousel - a slideshow component for cycling through elements like images. I have included one with captions keeping in mind accessibility. You can use any sort of carousels from the different ones listed on Boostrap's documentation page!-->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/css/images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg" class="d-block w-100" alt="! Add alt text for your image.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/css/images/ken-cheung-KonWFWUaAuk-unsplash.jpg" class="d-block w-100" alt="! Add alt text for your image.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/css/images/bailey-zindel-NRQV-hBF10M-unsplash.jpg" class="d-block w-100" alt="! Add alt text for your image.">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+                <!--Feel free to put any sort of text and images you want here. This is just a filler generated by Bacon Ipsum or you could even use Loren Ipsum as placeholder text!-->
+                <p>Bacon ipsum dolor amet rump shankle exercitation meatloaf consequat dolor corned beef nisi, id veniam chicken. Chislic corned beef biltong lorem. Ham hock shoulder officia, ball tip venison labore turducken velit andouille do incididunt. Occaecat deserunt dolore bresaola. Pork chop prosciutto commodo tenderloin esse ut, ham leberkas short ribs picanha.
+                   Duis salami cillum, cow meatball incididunt minim culpa alcatra qui turducken ut. Turkey culpa in shoulder eu, veniam cillum short ribs pork belly aliqua.Ribeye ground round lorem, ut excepteur shoulder magna reprehenderit. Officia sausage anim, sed ipsum culpa ham buffalo spare ribs deserunt prosciutto. Consectetur biltong venison lorem, kielbasa labore
+                   dolore ut sausage drumstick shankle aliquip pig salami. Duis proident chuck hamburger, pastrami commodo ullamco id laboris capicola in brisket sed.</p>
+                <p>
+                   Spicy jalapeno bacon ipsum dolor amet aute t-bone consectetur turducken venison chislic shankle pastrami laboris eu. Turducken prosciutto veniam tail dolore ut aute ad mollit leberkas t-bone elit turkey jerky ribeye. Meatloaf sausage ribeye commodo alcatra, ipsum beef ribs cillum tail landjaeger. Cillum aliquip ribeye in. Exercitation bacon bresaola, 
+                   dolore veniam irure ut pastrami filet mignon. Frankfurter ball tip prosciutto salami irure tenderloin drumstick leberkas minim. Pork chop bacon filet mignon, drumstick irure laboris veniam officia.
+                </p>
+                </div>
+            <div class="col-12 col-lg-4">
+                <p>Ad nisi cupim picanha, tempor jowl tri-tip sirloin elit ut ea ball tip dolore. Proident esse burgdoggen meatloaf. Nisi fatback excepteur occaecat shankle pig. Pariatur mollit lorem magna ham nostrud sausage. Aute quis frankfurter pig drumstick kevin. Lorem sunt dolore pig short ribs. Deserunt tenderloin adipisicing labore aute consectetur in dolore sirloin ad.
+                   Sunt chislic commodo officia in. Chislic shank pork, officia biltong laborum ipsum enim cow. Shankle do drumstick, reprehenderit andouille magna tongue occaecat pancetta strip steak qui nulla adipisicing quis. Ut sausage alcatra eu turducken ground round incididunt sunt. Leberkas doner capicola, deserunt tempor consectetur nulla dolore ut et chuck ea eu. 
+                   Venison short ribs ut, dolore ullamco laborum t-bone aliqua proident tongue non beef enim. Pork belly ribeye est sirloin ground round officia elit burgdoggen andouille pastrami incididunt.</p>
+                   
+                   <!--Now we are going to add a card which is esentially a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.-->
+                   <div class="card" style="width: 18rem;">
+                    <!--Add the image you want the card to display down below-->
+                    <img src="./assets/css/images/rodrigo-soares-c6SciRp2kaQ-unsplash.jpg" class="card-img-top" alt="! Add alt text please!">
+                    <div class="card-body">
+                      <h5 class="card-title">! Add your own card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!--This is a button on the card which usually takes the user to another link when clicked on so feel free to add your own link here!-->
+                      <a href="/" class="btn btn-primary">Go to link!</a>
+                    </div>
+                  </div>
+                  <br/>
+                  <!--We are going to add a list group which is a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.-->
+                  <!--You can add different types of list groups too which you can find on Bootstrap's documentation page!-->
+                  <ul class="list-group">
+                    <li class="list-group-item">! Add item 1</li>
+                    <li class="list-group-item">! Add item 2</li>
+                    <li class="list-group-item">! Add item 3</li>
+                    <li class="list-group-item">! Add item 4</li>
+                    <li class="list-group-item">! Add item 5</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+      <!--This is Boostrap's JavaScript. Including it will make our webpage interactive!-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
 </body>
